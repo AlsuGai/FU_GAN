@@ -1,0 +1,70 @@
+.services {
+    background-color: $color-gray;
+    padding: 60px 160px;
+    
+    h3 {
+        font-size: 24px;
+        color: $color-white;
+        padding: 30px 20px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 35px;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr 1fr;
+        gap: 40px;
+        
+    }
+}
+
+.ilgotherapy {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+    url("../images/Ilgotherapy.jpg");
+}
+
+.manual-therapy {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+    url("../images/manual-therapy.jpg");
+}
+
+.auriculotherapy {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+    url("../images/auriculotherapy.jpg");
+}
+
+.acupressure {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+    url("../images/acupressure.jpg");
+}
+
+.electropuncture {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+    url("../images/electropuncture.jpg");
+}
+
+.pir {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+    url("../images/pir.jpg");
+}
+
+.ilgotherapy,
+.manual-therapy,
+.auriculotherapy,
+.acupressure,
+.electropuncture,
+.pir {
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+

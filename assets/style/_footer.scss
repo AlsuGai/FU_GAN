@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color-green;
+    //  height: 10vh;
+    color: $color-white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        transform: rotate(180deg);
+        height: 70px;
+    }
+
+    .arrow-top {
+        display: flex;
+        align-items: start;
+        align-items: center;
+        cursor: pointer;
+    }
+}

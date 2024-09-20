@@ -1,0 +1,38 @@
+.contacts {
+    padding: 60px 160px;
+    background-color: $color-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .contacts__phone {
+        font-size: 42px;
+        font-weight: 600;
+
+        &:hover {
+            color: $color-green;
+        }
+    }
+
+    .contacts__social {
+        a {
+          img {
+            background-color: $color-green;
+          }
+    
+          & :hover {
+            background-color: $color-black;
+          }
+        }
+      }
+
+      .contacts__reception  {
+        height: 46px;
+      }
+
+      .contacts__hour {
+        font-size: 18px;
+      }
+}
