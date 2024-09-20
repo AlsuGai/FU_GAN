@@ -16,8 +16,9 @@
 
     .services-container {
         display: grid;
-        grid-template: 1fr 1fr/1fr 1fr 1fr;
-        gap: 40px;
+        justify-content: center;
+        grid-template: 1fr 1fr/400px 400px 400px;
+        gap: 60px;
         
     }
 }

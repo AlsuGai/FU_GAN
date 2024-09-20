@@ -17,10 +17,11 @@
       <nav class="header__nav">
         <a href="#" class="header__logo">ФУ ГАН</a>
         <div class="header__links">
-          <div>ОБО МНЕ</div>
-          <div>УСЛУГИ</div>
-          <div>СЕРТИФИКАТЫ</div>
-          <div>ОТЗЫВЫ</div>
+          <div id="nav-doctor">ОБО МНЕ</div>
+          <div id="nav-services">УСЛУГИ</div>
+          <div id="nav-treatment">Я ЛЕЧУ</div>
+          <div id="nav-sertificate">СЕРТИФИКАТЫ</div>
+          <div id="nav-feedback">ОТЗЫВЫ</div>
         </div>
         <div class="social-networks header__social">
           <a
@@ -30,14 +31,14 @@
           <a href="https://t.me/+Gj4n5LkhqWY2YzFi"
             ><img src="assets/images/telegram.svg" alt=""
           /></a>
-          <div class="button-contacts">Контакты</div>
+          <div id="contact" class="button-contacts">Контакты</div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="about-me"></section>
+      <section class="about-me" id="about-me"></section>
       <h2>О себе</h2>
-      <section class="services">
+      <section class="services" id="services">
         <h2>Услуги</h2>
         <div class="services-container">
           <div>
@@ -119,7 +120,7 @@
           </div>
         </div>
       </section>
-      <section class="treatment">
+      <section class="treatment" id="treatment">
         <h2>Я лечу</h2>
         <p>Высокоэффективное лечение:
           ⁃ остеохондроз позвоночника;
@@ -155,13 +156,13 @@
           ⁃ прикусывание языка и щеки во время приёма пищи.
           </p>
       </section>
-      <section class="certificates">
+      <section class="certificates" id="certificates">
         <h2>Мои сертификаты</h2>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <h2>Отзывы наших клиентов</h2>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <a class="contacts__phone" href="tel:+79160775080">+7-916-077-50-80</a>
         <div class="social-networks contacts__social">
         <a
@@ -178,9 +179,9 @@
     </main>
     <footer class="footer">
       <div>© 2024 ФУ ГАН</div>
-      <div class="arrow-top">Наверх <img src="./assets/images/arrow.gif" alt="Наверх"></div>
+      <div class="arrow-top" id="arrow-top">Наверх <img src="./assets/images/arrow.gif" alt="Наверх"></div>
     </footer>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>

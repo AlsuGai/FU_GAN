@@ -30,6 +30,11 @@
 
       .contacts__reception  {
         height: 46px;
+        background-color: $color-green;
+
+        &:hover {
+          
+        }
       }
 
       .contacts__hour {
