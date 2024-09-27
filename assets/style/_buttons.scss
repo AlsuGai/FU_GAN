@@ -1,0 +1,39 @@
+.nextBtn,
+.prevBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 35px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-green;
+}
+
+.prevBtn {
+  background-image: url("/assets/images/icons/left-arrow.png");
+}
+
+.nextBtn {
+  background-image: url("/assets/images/icons/right-arrow.png");
+}
+
+@media screen and (max-width: 960px) {
+  .prevBtn,
+  .nextBtn {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .prevBtn,
+  .nextBtn {
+    width: 15px;
+    height: 15px;
+  }
+}

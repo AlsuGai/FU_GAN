@@ -36,8 +36,33 @@
       </nav>
     </header>
     <main>
-      <section class="about-me" id="about-me"></section>
-      <h2>О себе</h2>
+      <section class="about-container">
+        <h2>ОБО МНЕ</h2>
+        <div class="about-wrapper">
+          <img
+            src="assets/images/photo_FU_GAN.jpg"
+            alt="FU GAN"
+            class="about-photo"
+          />
+          <div class="about-info">
+            Здравствуйте! Меня зовут Фу Ган Львович. Я потомственный
+            врач-иглорефлексотерапевт, врач-невролог, специалист по лечебной
+            физкультуре, реабилитолог, мануальный терапевт. Окончил Саратовский
+            ГМУ имени В.И. Разумовского, проходил обучение на кафедре неврологии
+            в Первом Московском государственном медицинском университете им.
+            И.М. Сеченова, РМПО. Обучался в Китае по программе "Углубленная
+            иглорефлексотерапия". Работаю по авторской методике, которая
+            сочетает в себе лучшее из современных техник рефлексотерапии, ЛФК,
+            остеопатии, кинезиотерапии и различных мануальных техник, а также
+            полувековой опыт эффективного лечения, накопленный моими отцом и
+            дедом. Моя работа интересна мне тем, что я наблюдаю положительную
+            динамику лечения у пациентов, которые перестают испытывать
+            многолетнюю боль. Большая часть из них продолжает самостоятельно
+            заниматься ЛФК, и лечебная физкультура становится полезной привычкой
+            в их образе жизни.
+          </div>
+        </div>
+      </section>
       <section class="services" id="services">
         <h2>Услуги</h2>
         <div class="services-container">
@@ -122,64 +147,87 @@
       </section>
       <section class="treatment" id="treatment">
         <h2>Я лечу</h2>
-        <p>Высокоэффективное лечение:
-          ⁃ остеохондроз позвоночника;
-          ⁃ грыжа межпозвонкового диска;
-          ⁃ мышечные болевые синдромы;
-          ⁃ неврастенический синдром;
-          ⁃ головные боли;
-          ⁃ невриты и невралгии;
-          ⁃ инсульт и послеинсультное состояние;
-          ⁃ нарушение менструального цикла;
-          ⁃ импотенция;
-          ⁃ хронический простатит;
-          ⁃ хронические заболевания дыхательной системы;
-          ⁃ боли в спине, пояснице;
-          ⁃ боли в суставах;
-          ⁃ боли в пятках;
-          ⁃ тянущие боли в конечностях;
-          ⁃ контрактура;
-          ⁃ посттравматический синдром (травмы и операции на суставы);
-          ⁃ онемение рук и ног;
-          ⁃ люмбоишиалгия, дорсалгия;
-          ⁃ невриты;
-          ⁃ невропатия тройничного нерва;
-          ⁃ восстановление после инсульта;
-          ⁃ стресс, депрессия;
-          ⁃ плохой сон, бессонница;
-          ⁃ головная боль, головокружение, мигрень;
-          ⁃ панические атаки;
-          ⁃ урогенитальные расстройства (цистит, простатит);
-          ⁃ заболевания репродуктивной системы;
-          ⁃ онемение десны, губы, подбородка после удаления зуба;
-          ⁃ бруксизм и зажатость нижней челюсти;
-          ⁃ прикусывание языка и щеки во время приёма пищи.
-          </p>
+        <p>
+          Высокоэффективное лечение: ⁃ остеохондроз позвоночника; ⁃ грыжа
+          межпозвонкового диска; ⁃ мышечные болевые синдромы; ⁃ неврастенический
+          синдром; ⁃ головные боли; ⁃ невриты и невралгии; ⁃ инсульт и
+          послеинсультное состояние; ⁃ нарушение менструального цикла; ⁃
+          импотенция; ⁃ хронический простатит; ⁃ хронические заболевания
+          дыхательной системы; ⁃ боли в спине, пояснице; ⁃ боли в суставах; ⁃
+          боли в пятках; ⁃ тянущие боли в конечностях; ⁃ контрактура; ⁃
+          посттравматический синдром (травмы и операции на суставы); ⁃ онемение
+          рук и ног; ⁃ люмбоишиалгия, дорсалгия; ⁃ невриты; ⁃ невропатия
+          тройничного нерва; ⁃ восстановление после инсульта; ⁃ стресс,
+          депрессия; ⁃ плохой сон, бессонница; ⁃ головная боль, головокружение,
+          мигрень; ⁃ панические атаки; ⁃ урогенитальные расстройства (цистит,
+          простатит); ⁃ заболевания репродуктивной системы; ⁃ онемение десны,
+          губы, подбородка после удаления зуба; ⁃ бруксизм и зажатость нижней
+          челюсти; ⁃ прикусывание языка и щеки во время приёма пищи.
+        </p>
       </section>
-      <section class="certificates" id="certificates">
+      <section class="certificate-container">
         <h2>Мои сертификаты</h2>
+        <div class="certificate-wrapper">
+          <button id="prevBtnCertificate" class="prevBtn"></button>
+          <div id="imageContainer">
+            <img
+              id="certificate-image"
+              class="slide"
+              src="/assets/images/certificates/certificate_1.jpg"
+              alt="Сертификат"
+            />
+          </div>
+          <button id="nextBtnCertificate" class="nextBtn"></button>
+        </div>
       </section>
-      <section class="feedback" id="feedback">
-        <h2>Отзывы наших клиентов</h2>
+      <section class="feedback-container">
+        <h2>Отзывы моих клиентов</h2>
+        <div class="feedback-wrapper">
+          <button id="prevBtnFeedback" class="prevBtn"></button>
+          <div class="feedback" id="feedback">
+            <img class="feedback-img" id="feedback-img" src="" alt="" />
+            <p class="feedback-text" id="feedback-text"></p>
+            <h4 class="feedback-name" id="feedback-name"></h4>
+          </div>
+          <button id="nextBtnFeedback" class="nextBtn"></button>
+        </div>
+        <div class="feedback-link">
+          <a
+            href="https://prodoctorov.ru/moskva/vrach/219423-fu/"
+            target="_blank"
+            >Про докторов</a
+          >
+          <a href="https://t.me/+Gj4n5LkhqWY2YzFi" target="_blank"
+            >Telegram "Лечение боли"</a
+          >
+        </div>
       </section>
       <section class="contacts" id="contacts">
         <a class="contacts__phone" href="tel:+79160775080">+7-916-077-50-80</a>
         <div class="social-networks contacts__social">
-        <a
+          <a
             href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
-            ><img src="assets/images/whatsapp-white.svg" alt="Написать по whatsapp"
+            ><img
+              src="assets/images/whatsapp-white.svg"
+              alt="Написать по whatsapp"
           /></a>
           <a href="https://t.me/+Gj4n5LkhqWY2YzFi"
             ><img src="assets/images/telegram-white.svg" alt=""
           /></a>
         </div>
-        <a class="button-contacts contacts__reception" href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"><div>Записаться на консультацию</div></a> 
+        <a
+          class="button-contacts contacts__reception"
+          href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
+          ><div>Записаться на консультацию</div></a
+        >
         <p class="contacts__hour">Часы работы: Пн-Пт с 9:00 до 19:00</p>
       </section>
     </main>
     <footer class="footer">
       <div>© 2024 ФУ ГАН</div>
-      <div class="arrow-top" id="arrow-top">Наверх <img src="./assets/images/arrow.gif" alt="Наверх"></div>
+      <div class="arrow-top" id="arrow-top">
+        Наверх <img src="./assets/images/arrow.gif" alt="Наверх" />
+      </div>
     </footer>
     <div id="app"></div>
     <script type="module" src="./src/scripts/main.js"></script>
