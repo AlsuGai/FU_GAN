@@ -42,8 +42,33 @@
       </nav>
     </header>
     <main>
-      <section class="about-me" id="about-me"></section>
-      <h2>О себе</h2>
+      <section class="about-container">
+        <h2>ОБО МНЕ</h2>
+        <div class="about-wrapper">
+          <img
+            src="assets/images/Fu_Gan/photo_FU_GAN.jpg"
+            alt="FU GAN"
+            class="about-photo"
+          />
+          <div class="about-info">
+            Здравствуйте! Меня зовут Фу Ган Львович. Я потомственный
+            врач-иглорефлексотерапевт, врач-невролог, специалист по лечебной
+            физкультуре, реабилитолог, мануальный терапевт. Окончил Саратовский
+            ГМУ имени В.И. Разумовского, проходил обучение на кафедре неврологии
+            в Первом Московском государственном медицинском университете им.
+            И.М. Сеченова, РМПО. Обучался в Китае по программе "Углубленная
+            иглорефлексотерапия". Работаю по авторской методике, которая
+            сочетает в себе лучшее из современных техник рефлексотерапии, ЛФК,
+            остеопатии, кинезиотерапии и различных мануальных техник, а также
+            полувековой опыт эффективного лечения, накопленный моими отцом и
+            дедом. Моя работа интересна мне тем, что я наблюдаю положительную
+            динамику лечения у пациентов, которые перестают испытывать
+            многолетнюю боль. Большая часть из них продолжает самостоятельно
+            заниматься ЛФК, и лечебная физкультура становится полезной привычкой
+            в их образе жизни.
+          </div>
+        </div>
+      </section>
       <section class="services" id="services">
         <h2>Услуги</h2>
         <div class="services-container">
@@ -163,11 +188,42 @@
           ⁃ прикусывание языка и щеки во время приёма пищи.
         </p>
       </section>
-      <section class="certificates" id="certificates">
+      <section class="certificate-container">
         <h2>Мои сертификаты</h2>
+        <div class="certificate-wrapper">
+          <button id="prevBtnCertificate" class="prevBtn"></button>
+          <div id="imageContainer">
+            <img
+              id="certificate-image"
+              class="slide"
+              src="/assets/images/certificates/certificate_1.jpg"
+              alt="Сертификат"
+            />
+          </div>
+          <button id="nextBtnCertificate" class="nextBtn"></button>
+        </div>
       </section>
-      <section class="feedback" id="feedback">
-        <h2>Отзывы наших клиентов</h2>
+      <section class="feedback-container">
+        <h2>Отзывы моих клиентов</h2>
+        <div class="feedback-wrapper">
+          <button id="prevBtnFeedback" class="prevBtn"></button>
+          <div class="feedback" id="feedback">
+            <img class="feedback-img" id="feedback-img" src="" alt="" />
+            <p class="feedback-text" id="feedback-text"></p>
+            <h4 class="feedback-name" id="feedback-name"></h4>
+          </div>
+          <button id="nextBtnFeedback" class="nextBtn"></button>
+        </div>
+        <div class="feedback-link">
+          <a
+            href="https://prodoctorov.ru/moskva/vrach/219423-fu/"
+            target="_blank"
+            >Про докторов</a
+          >
+          <a href="https://t.me/+Gj4n5LkhqWY2YzFi" target="_blank"
+            >Telegram "Лечение боли"</a
+          >
+        </div>
       </section>
       <section class="contacts" id="contacts">
         <a class="contacts__phone" href="tel:+79160775080">+7-916-077-50-80</a>
