@@ -23,6 +23,11 @@ header {
     cursor: pointer;
   }
 
+  .header__navblocks {
+    display: flex;
+    justify-content: space-around; 
+  }
+
   .header__links {
     display: flex;
     align-items: center;
@@ -46,6 +51,20 @@ header {
       & :hover {
         background-color: $color-white;
       }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .header__nav {
+  
+    .header__logo {
+      font-size: 24px;
+    }
+  
+    .header__links {
+      font-size: 20px;
+      gap: 22px;
     }
   }
 }

@@ -68,4 +68,26 @@
     vertical-align: bottom;
 }
 
+@media (max-width: 1360px) {
+    .services {
+        .services-container {
+            display: grid;
+            justify-content: center;
+            grid-template: 1fr 1fr 1fr/400px 400px;
+            gap: 30px;
+            
+        }
+    }
+  }
 
+  @media (max-width: 1024px) {
+    .services {
+        .services-container {
+            display: grid;
+            justify-content: center;
+            grid-template: 1fr 1fr 1fr/400px 400px;
+            gap: 30px;
+            
+        }
+    }
+  }

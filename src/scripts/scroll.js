@@ -55,7 +55,7 @@ navContact.addEventListener("click", e => {
 });
 
 arrow.addEventListener("click", e => {
-    navDoctor.scrollIntoView({
+    doctor.scrollIntoView({
         block: "center",
         behavior: "smooth",
     })
