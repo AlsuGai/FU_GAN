@@ -5,12 +5,11 @@
   justify-content: space-evenly;
   gap: 15px;
   background-color: $color-white;
-  padding: 100px 0 50px;
+  padding: 50px 160px;
   width: 100%;
 }
 
 .feedback-wrapper {
-  margin: 30px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -36,6 +35,11 @@
   object-fit: cover;
   object-position: center;
 }
+
+.feedback-text {
+  width: 40vw;
+}
+
 
 .feedback-link {
   display: flex;

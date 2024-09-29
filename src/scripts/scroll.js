@@ -4,13 +4,14 @@ const navTreatment = document.getElementById("nav-treatment");
 const navSertificate = document.getElementById("nav-sertificate");
 const navFeedback = document.getElementById("nav-feedback");
 const navContact = document.getElementById("contact");
-const doctor = document.getElementById("about-me");
-const services = document.getElementById("services");
-const treatment = document.getElementById("treatment");
-const certificates = document.getElementById("certificates");
-const feedback = document.getElementById("feedback");
-const contacts = document.getElementById("contacts");
-const arrow = document.getElementById("arrow-top")
+export const doctor = document.getElementById("about-container");
+export const services = document.getElementById("services");
+export const treatment = document.getElementById("treatment");
+export const certificates = document.getElementById("certificates");
+export const feedback = document.getElementById("feedback");
+export const contacts = document.getElementById("contacts");
+const arrow = document.getElementById("arrow-top");
+const logo = document.getElementById("logo");
 
 navDoctor.addEventListener("click", e => {
     doctor.scrollIntoView({
@@ -56,7 +57,14 @@ navContact.addEventListener("click", e => {
 
 arrow.addEventListener("click", e => {
     doctor.scrollIntoView({
-        block: "center",
+        block: "start",
+        behavior: "smooth",
+    })
+})
+
+logo.addEventListener("click", e => {
+    doctor.scrollIntoView({
+        block: "start",
         behavior: "smooth",
     })
 })

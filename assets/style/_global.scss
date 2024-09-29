@@ -10,36 +10,49 @@
   font-family: "Nunito Sans", Arial, sans-serif;
 }
 
+body {
+  font-size: 1vw;
+
+  @media (max-width: 430px) {
+      font-size: 5.4vw;
+  }
+
+  @media (max-width: 1024px) {
+      font-size: 2.1vw;
+  }
+}
+
 a {
   text-decoration: none;
   color: $color-black;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 2.625rem;
   text-align: center;
-  margin-bottom: 90px;
+  padding-bottom: 3.125rem;
   @media screen and (max-width: 960px) {
-    margin-bottom: 50px;
-    font-size: 30px;
+    margin-bottom: 3.125rem;
+    font-size: 1.875rem;
   }
 }
 
-.social-networks {
+.social-networks,
+.burger__social {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 
   a {
     cursor: pointer;
-    width: 46px;
+    width: 2.875rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
     img {
-      width: 46px;
-      border-radius: 30px;
-      padding: 5px;
+      width: 2.875rem;
+      border-radius: 1.875rem;
+      padding: 0.3125rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,4 +76,8 @@ h2 {
     background-color: $color-black;
     color: $color-green;
   }
+}
+
+* {
+  scroll-margin-top: 10vh;
 }

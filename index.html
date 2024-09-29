@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -15,34 +15,47 @@
   <body>
     <header>
       <nav class="header__nav">
-        <a href="#" class="header__logo">ФУ ГАН</a>
-        <div>
-          <div class="header__navblocks">
-            <div class="header__links">
-              <div id="nav-doctor">ОБО МНЕ</div>
-              <div id="nav-services">УСЛУГИ</div>
-              <div id="nav-treatment">Я ЛЕЧУ</div>
-              <div id="nav-sertificate">СЕРТИФИКАТЫ</div>
-              <div id="nav-feedback">ОТЗЫВЫ</div>
-            </div>
-            <div class="social-networks header__social">
-              <a
-                href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
-                ><img
-                  src="assets/images/whatsapp.svg"
-                  alt="Написать по whatsapp"
-              /></a>
-              <a href="https://t.me/+Gj4n5LkhqWY2YzFi"
-                ><img src="assets/images/telegram.svg" alt=""
-              /></a>
-              <div id="contact" class="button-contacts">Контакты</div>
-            </div>
-          </div>
+        <div class="header__logo" id="logo">ФУ ГАН</div>
+        <div class="header__links">
+          <div id="nav-doctor">ОБО МНЕ</div>
+          <div id="nav-services">УСЛУГИ</div>
+          <div id="nav-treatment">Я ЛЕЧУ</div>
+          <div id="nav-sertificate">СЕРТИФИКАТЫ</div>
+          <div id="nav-feedback">ОТЗЫВЫ</div>
+        </div>
+        <div class="social-networks header__social">
+          <a
+            href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
+            ><img src="assets/images/whatsapp.svg" alt="Написать по whatsapp"
+          /></a>
+          <a href="https://t.me/+Gj4n5LkhqWY2YzFi"
+            ><img src="assets/images/telegram.svg" alt="Написать в телеграм"
+          /></a>
+          <div id="contact" class="button-contacts">Контакты</div>
         </div>
       </nav>
+      <div class="header__burger burger__inactive" id="header__burger"></div>
+
+        <div class="burger__pop-up pop-up-inactive" id="pop-up">
+          <div id="burger__doctor">ОБО МНЕ</div>
+          <div id="burger__services">УСЛУГИ</div>
+          <div id="burger__treatment">Я ЛЕЧУ</div>
+          <div id="burger__sertificate">СЕРТИФИКАТЫ</div>
+          <div id="burger__feedback">ОТЗЫВЫ</div>
+          <div class="burger__social">
+            <a
+              href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
+              ><img src="assets/images/whatsapp.svg" alt="Написать по whatsapp"
+            /></a>
+            <a href="https://t.me/+Gj4n5LkhqWY2YzFi"
+              ><img src="assets/images/telegram.svg" alt="Написать в телеграм"
+            /></a>
+          </div>
+          <div id="burger-contact" class="button-contacts">Контакты</div>
+        </div>
     </header>
     <main>
-      <section class="about-container">
+      <section class="about-container" id="about-container">
         <h2>ОБО МНЕ</h2>
         <div class="about-wrapper">
           <img
@@ -188,7 +201,7 @@
           ⁃ прикусывание языка и щеки во время приёма пищи.
         </p>
       </section>
-      <section class="certificate-container">
+      <section class="certificate-container" id="certificates">
         <h2>Мои сертификаты</h2>
         <div class="certificate-wrapper">
           <button id="prevBtnCertificate" class="prevBtn"></button>
@@ -203,7 +216,7 @@
           <button id="nextBtnCertificate" class="nextBtn"></button>
         </div>
       </section>
-      <section class="feedback-container">
+      <section class="feedback-container" id="feedback">
         <h2>Отзывы моих клиентов</h2>
         <div class="feedback-wrapper">
           <button id="prevBtnFeedback" class="prevBtn"></button>
