@@ -1,35 +1,54 @@
 .about-container {
-  padding: 50px 15vw;
+  padding: 3.125rem 15vw;
   background-color: $color-white;
 }
 
 .about-wrapper {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .about-info {
-  text-indent: 40px;
-  font-size: 20px;
+  text-indent: 2.5rem;
+  font-size: 1.25rem;
 }
 
 .about-photo {
   width: auto;
-  max-height: 70vh;
+  height: 70vh;
   margin-left: 10vw;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 1500px) {
   .about-container {
-    padding: 50px 0 60px;
+    padding: 2.5rem;
+    background-color: $color-white;
   }
+
+  .about-photo {
+    margin-left: 0;
+  }
+
+  .about-info {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .about-wrapper {
     flex-direction: column;
     align-items: center;
   }
   .about-info {
-    text-indent: 15px;
-    font-size: 18px
+    text-indent: 0.9375rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-photo {
+    width: 80vw;
+    height: auto;
   }
 }

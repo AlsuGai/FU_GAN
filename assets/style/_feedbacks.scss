@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 0.9375rem;
   background-color: $color-white;
-  padding: 50px 160px;
+  padding: 3.125rem 10rem;
   width: 100%;
 }
 
@@ -13,14 +13,14 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .feedback {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
   width: 80vw;
   text-align: center;
   opacity: 1;
@@ -28,8 +28,8 @@
 }
 
 .feedback-img {
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
@@ -40,50 +40,53 @@
   width: 40vw;
 }
 
-
 .feedback-link {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .feedback-link a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1300px) {
+  .feedback-text {
+    width: 60vw;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .feedback-container {
-    padding: 50px 0 60px;
+    padding: 3.125rem 2rem 3.75rem;
   }
+
   .feedback-wrapper {
-    margin: 15px;
-    gap: 15px;
+    gap: 0.9375rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .feedback-container {
-    padding: 40px 0 50px;
+    padding: 2.5rem 2rem 3.125rem;
   }
   .feedback-wrapper {
-    margin: 10px;
-    gap: 13px;
+    gap: 0.8125rem;
   }
 
   .feedback-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .feedbacke-container {
-    padding: 30px 0 40px;
+    padding: 1.875rem 1rem 2.5rem;
   }
   .feedback-wrapper {
-    margin: 8px;
-    gap: 10px;
+    gap: 0.625rem;
   }
 }

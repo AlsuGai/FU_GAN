@@ -40,17 +40,17 @@ header {
 }
 
 .header__social,
-  .burger__social {
-    a {
-      img {
-        background-color: $color-black;
-      }
+.burger__social {
+  a {
+    img {
+      background-color: $color-black;
+    }
 
-      & :hover {
-        background-color: $color-white;
-      }
+    & :hover {
+      background-color: $color-white;
     }
   }
+}
 
 @media (max-width: 1360px) {
   .header__nav {
@@ -62,7 +62,7 @@ header {
       font-size: 1.25rem;
       gap: 1.375rem;
     }
-  } 
+  }
 }
 
 @media (max-width: 1200px) {
@@ -89,7 +89,6 @@ header {
     background: url(../images/burger.png);
     background-size: 2rem 2rem;
     background-position: center;
-
   }
 
   .burger__active {
@@ -133,6 +132,25 @@ header {
   }
 }
 
+@media (max-width: 1200px) and (max-height: 700px) {
+  .burger__pop-up {
+    top: 13vh;
+  }
+}
+
+@media (max-width: 560px) {
+  .header__nav {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .burger__pop-up {
+    padding: 1.5rem;
+  }
+
+  .header__burger {
+    right: 1.5rem;
+  }
+}
 
 @media screen and (min-width: 1201px) {
   .header__burger,

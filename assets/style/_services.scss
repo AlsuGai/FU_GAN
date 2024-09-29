@@ -1,55 +1,79 @@
 .services {
-    background-color: $color-gray;
-    padding: 60px 160px;
-    
-    h3 {
-        font-size: 24px;
-        color: $color-white;
-        padding: 30px 20px;
-    }
+  background-color: $color-gray;
+  padding: 3.75rem 10rem;
 
-    p {
-        font-size: 18px;
-        font-weight: 300;
-        padding-top: 35px;
-    }
+  h3 {
+    font-size: 1.5rem;
+    color: $color-white;
+    padding: 1.875rem 1.25rem;
+  }
 
-    .services-container {
-        display: grid;
-        justify-content: center;
-        grid-template: 1fr 1fr/400px 400px 400px;
-        gap: 60px;
-        
-    }
+  p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding-top: 2.1875rem;
+    width: 25rem;
+  }
+
+  .services-container {
+    display: grid;
+    justify-content: center;
+    grid-template: 1fr 1fr/25rem 25rem 25rem;
+    gap: 3.75rem;
+  }
 }
 
 .ilgotherapy {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../images/Ilgotherapy.jpg");
 }
 
 .manual-therapy {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../images/manual-therapy.jpg");
 }
 
 .auriculotherapy {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../images/auriculotherapy.jpg");
 }
 
 .acupressure {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../images/acupressure.jpg");
 }
 
 .electropuncture {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../images/electropuncture.jpg");
 }
 
 .pir {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../images/pir.jpg");
 }
 
@@ -59,35 +83,50 @@
 .acupressure,
 .electropuncture,
 .pir {
-    background-position: center;
-    width: 400px;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: table-cell;
-    vertical-align: bottom;
+  background-position: center;
+  width: 25rem;
+  height: 18.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: bottom;
 }
 
-@media (max-width: 1360px) {
-    .services {
-        .services-container {
-            display: grid;
-            justify-content: center;
-            grid-template: 1fr 1fr 1fr/400px 400px;
-            gap: 30px;
-            
-        }
-    }
-  }
+@media (max-width: 1500px) {
+  .services {
+    padding: 3.75rem 2rem;
 
-  @media (max-width: 1024px) {
-    .services {
-        .services-container {
-            display: grid;
-            justify-content: center;
-            grid-template: 1fr 1fr 1fr/400px 400px;
-            gap: 30px;
-            
-        }
+    .services-container {
+      grid-template: 1fr 1fr 1fr/25rem 25rem;
+      gap: 1.875rem;
     }
   }
+}
+
+@media (max-width: 900px) {
+  .services {
+    p {
+      font-size: 1rem;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.875rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      width: 90vw;
+    }
+  }
+}

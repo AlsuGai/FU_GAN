@@ -1,21 +1,31 @@
 .footer {
-    background-color: $color-green;
-    //  height: 10vh;
-    color: $color-white;
-    padding: 20px 40px;
+  background-color: $color-green;
+  color: $color-white;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    transform: rotate(180deg);
+    height: 4.375rem;
+  }
+
+  .arrow-top {
     display: flex;
-    justify-content: space-between;
+    align-items: start;
     align-items: center;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 1.25rem 1.5rem;
 
     img {
-        transform: rotate(180deg);
-        height: 70px;
+      transform: rotate(180deg);
+      height: 2rem;
     }
-
-    .arrow-top {
-        display: flex;
-        align-items: start;
-        align-items: center;
-        cursor: pointer;
-    }
+  }
 }

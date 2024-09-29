@@ -1,43 +1,84 @@
 .contacts {
-    padding: 60px 160px;
-    background-color: $color-gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  padding: 3.75rem 10rem;
+  background-color: $color-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
 
+  .contacts__phone {
+    font-size: 2.625rem;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  .contacts__social {
+    a {
+      img {
+        background-color: $color-green;
+      }
+
+      & :hover {
+        background-color: $color-black;
+      }
+    }
+  }
+
+  .contacts__reception {
+    height: 3.5rem;
+    background-color: $color-green;
+
+    &:hover {
+      background-color: rgb(7, 120, 64, 0.7);
+    }
+  }
+
+  .contacts__hour {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contacts {
     .contacts__phone {
-        font-size: 42px;
-        font-weight: 600;
-
-        &:hover {
-            color: $color-green;
-        }
+      font-size: 2rem;
     }
 
-    .contacts__social {
-        a {
-          img {
-            background-color: $color-green;
-          }
-    
-          & :hover {
-            background-color: $color-black;
-          }
-        }
-      }
+    .contacts__reception {
+      height: 3rem;
+    }
 
-      .contacts__reception  {
-        height: 56px;
-        background-color: $color-green;
+    .contacts__hour {
+      font-size: 1.125rem;
+    }
+  }
+}
 
-        &:hover {
-          background-color: rgb(7, 120, 64, 0.7);
-        }
-      }
+@media screen and (max-width: 720px) {
+  .contacts {
+    .contacts__phone {
+      font-size: 1.7rem;
+    }
 
-      .contacts__hour {
-        font-size: 18px;
-      }
+    .contacts__reception {
+      height: 3rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .contacts__hour {
+      font-size: 1.125rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contacts {
+    padding: 3.75rem 2rem;
+  }
 }
