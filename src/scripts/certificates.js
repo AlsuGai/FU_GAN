@@ -1,14 +1,14 @@
 const images = [
-  "./assets/images/certificates/certificate_1.jpg",
-  "./assets/images/certificates/certificate_2.jpg",
-  "./assets/images/certificates/certificate_3.jpg",
-  "./assets/images/certificates/certificate_4.jpg",
-  "./assets/images/certificates/certificate_5.jpg",
-  "./assets/images/certificates/certificate_6.jpg",
-  "./assets/images/certificates/certificate_7.jpg",
-  "./assets/images/certificates/certificate_8.jpg",
-  "./assets/images/certificates/certificate_9.jpg",
-  "./assets/images/certificates/certificate_10.jpg",
+  "./assets/images/certificate/certificate_1.jpg",
+  "./assets/images/certificate/certificate_2.jpg",
+  "./assets/images/certificate/certificate_3.jpg",
+  "./assets/images/certificate/certificate_4.jpg",
+  "./assets/images/certificate/certificate_5.jpg",
+  "./assets/images/certificate/certificate_6.jpg",
+  "./assets/images/certificate/certificate_7.jpg",
+  "./assets/images/certificate/certificate_8.jpg",
+  "./assets/images/certificate/certificate_9.jpg",
+  "./assets/images/certificate/certificate_10.jpg",
 ];
 
 let currentIndex = 0;
