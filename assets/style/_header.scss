@@ -139,6 +139,54 @@ header {
   }
 }
 
+@media (max-width: 376px)  {
+  .burger__pop-up {
+    top: 12vh;
+  }
+}
+
+@media (max-width: 361px)  {
+  .burger__pop-up {
+    top: 10vh;
+  }
+}
+
+@media (max-width: 668px) and (orientation:landscape)  {
+  .burger__pop-up {
+    top: 20vh;
+  }
+}
+
+@media (max-width: 897px) and (orientation:landscape)  {
+  .burger__pop-up {
+    top: 19vh;
+  }
+}
+
+@media (max-width: 933px) and (orientation:landscape)  {
+  .burger__pop-up {
+    top: 18vh;
+  }
+}
+
+@media (max-width: 741px) and (orientation:landscape)  {
+  .burger__pop-up {
+    top: 21 vh;
+  }
+}
+
+@media (max-width: 722px) and (orientation:landscape)  {
+  .burger__pop-up {
+    top: 14vh;
+  }
+}
+
+@media (max-width: 883px) and (orientation:landscape)  {
+  .burger__pop-up {
+    top: 22vh;
+  }
+}
+
 @media (max-width: 560px) {
   .header__nav {
     padding: 2.5rem 1.5rem;
