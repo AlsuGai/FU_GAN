@@ -7,7 +7,6 @@ import {
   contacts,
 } from "./scroll.js";
 
-const logo = document.getElementById("logo");
 const menu = document.getElementById("header__burger");
 const popUp = document.getElementById("pop-up");
 const burgerDoctor = document.getElementById("burger__doctor");
@@ -21,10 +20,6 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("burger__inactive");
   menu.classList.toggle("burger__active");
   popUp.classList.toggle("pop-up-inactive");
-});
-
-logo.addEventListener("click", () => {
-  popUp.classList.add("pop-up-inactive");
 });
 
 function closeMenu() {
