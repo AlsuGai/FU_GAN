@@ -80,7 +80,6 @@ header {
     height: 3.125rem;
     justify-items: end;
     padding: 0.625rem;
-    background-repeat: no-repeat;
     position: absolute;
     right: 2.5rem;
   }
@@ -89,12 +88,14 @@ header {
     background: url(../images/burger.png);
     background-size: 2rem 2rem;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .burger__active {
     background: url(../images/close.png);
     background-size: 2rem 2rem;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .burger__pop-up {
