@@ -28,9 +28,9 @@ function updateImage() {
   mainImage.style.opacity = 0;
   setTimeout(() => {
     mainImage.src = certificate[currentIndex];
-    // mainImage.onload = () => {
-    mainImage.style.opacity = 1;
-    // };
+    mainImage.onload = () => {
+      mainImage.style.opacity = 1;
+    };
   }, 300);
 }
 
@@ -42,6 +42,32 @@ document.getElementById("prevBtnCertificate").addEventListener("click", () => {
 document.getElementById("nextBtnCertificate").addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % certificate.length;
   updateImage(currentIndex);
+});
+
+// прокрутка пальцами
+
+let startX;
+
+const mainImage = document.getElementById("certificate-image");
+
+mainImage.addEventListener("touchstart", (event) => {
+  startX = event.touches[0].clientX;
+});
+
+mainImage.addEventListener("touchmove", (event) => {
+  const moveX = event.touches[0].clientX;
+  const diffX = startX - moveX;
+
+  if (Math.abs(diffX) > 50) {
+    if (diffX > 0) {
+      currentIndex = (currentIndex + 1) % certificate.length;
+    } else {
+      currentIndex =
+        (currentIndex - 1 + certificate.length) % certificate.length;
+    }
+    updateImage();
+    event.preventDefault();
+  }
 });
 
 updateImage(currentIndex);
