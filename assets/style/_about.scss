@@ -5,7 +5,7 @@
 
 .about-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.875rem;
 }
 
@@ -16,6 +16,8 @@
 }
 
 .about-photo {
+  object-fit: cover;
+  object-position: center;
   max-width: 600px;
   width: auto;
   max-height: 80vh;
@@ -27,13 +29,12 @@
   .about-container {
     padding: 2.5rem;
   }
-
-  .about-info {
-    font-size: 1.1rem;
-  }
 }
 
 @media (max-width: 1000px) {
+  .about-container {
+    padding: 2rem;
+  }
   .about-wrapper {
     flex-direction: column;
     align-items: center;
@@ -45,7 +46,16 @@
 }
 
 @media (max-width: 550px) {
+  .about-container {
+    padding: 1rem;
+  }
   .about-photo {
-    max-width: 80vw;
+    width: 100%;
+    max-height: 65vh;
+    padding: 0;
+  }
+  .about-info {
+    padding: 0;
+    font-size: 1rem;
   }
 }

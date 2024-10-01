@@ -13,16 +13,11 @@
   margin: 3rem;
 }
 
-#imageContainer {
-  position: relative;
+.certificate-image {
+  max-width: 80vw;
+  width: auto;
   height: 100%;
-  overflow: hidden;
-}
-
-img.slide {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
@@ -41,15 +36,18 @@ img.slide {
 
   .certificate-wrapper {
     margin: 0.9375rem;
-    gap: 0.9375rem;
+    gap: 0.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .certificate-wrapper {
     margin: 0.625rem;
-    gap: 0.8125rem;
+    gap: 0.6rem;
     height: 40vh;
+  }
+  .certificate-image {
+    max-width: 77vw;
   }
 }
 
@@ -59,7 +57,10 @@ img.slide {
   }
   .certificate-wrapper {
     margin: 0.5rem;
-    gap: 0.625rem;
+    gap: 0.4rem;
     height: 35vh;
+  }
+  .certificate-image {
+    max-width: 73vw;
   }
 }

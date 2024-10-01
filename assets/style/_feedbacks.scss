@@ -60,7 +60,6 @@
   .feedback-container {
     padding: 3.125rem 2rem 3.75rem;
   }
-
   .feedback-wrapper {
     gap: 0.9375rem;
   }
@@ -73,12 +72,15 @@
   .feedback-wrapper {
     gap: 0.8125rem;
   }
-
   .feedback-link {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.9375rem;
+  }
+  .feedback-img {
+    width: 7.5rem;
+    height: 7.5rem;
   }
 }
 
@@ -88,5 +90,9 @@
   }
   .feedback-wrapper {
     gap: 0.625rem;
+  }
+  .feedback-img {
+    width: 6rem;
+    height: 6rem;
   }
 }

@@ -23,24 +23,25 @@ const certificate = [
 ];
 let currentIndex = 0;
 
-function updateImage(index) {
+function updateImage() {
   const mainImage = document.getElementById("certificate-image");
   mainImage.style.opacity = 0;
   setTimeout(() => {
-    mainImage.src = certificate[index];
-    mainImage.onload = () => {
-      mainImage.style.opacity = 1;
-    };
+    mainImage.src = certificate[currentIndex];
+    // mainImage.onload = () => {
+    mainImage.style.opacity = 1;
+    // };
   }, 300);
 }
-updateImage(currentIndex);
 
 document.getElementById("prevBtnCertificate").addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + certificate.length) % certificate.length;
-  updateImage();
+  updateImage(currentIndex);
 });
 
 document.getElementById("nextBtnCertificate").addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % certificate.length;
   updateImage(currentIndex);
 });
+
+updateImage(currentIndex);

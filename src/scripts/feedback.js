@@ -53,7 +53,7 @@ let currentIndex = 0;
 
 function displayFeedback() {
   const feedback = feedbackArr[currentIndex];
-  const feedbackDiv = document.getElementById("feedback");
+  const feedbackDiv = document.getElementById("feedback-wrapper");
   feedbackDiv.style.opacity = 0;
   setTimeout(() => {
     document.getElementById("feedback-img").src = feedback.photo;
