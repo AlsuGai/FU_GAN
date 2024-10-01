@@ -73,4 +73,30 @@ document.getElementById("nextBtnFeedback").addEventListener("click", () => {
   displayFeedback(currentIndex);
 });
 
+// прокрутка пальцами
+
+let startX;
+
+const feedbackDiv = document.getElementById("feedback-wrapper");
+
+feedbackDiv.addEventListener("touchstart", (event) => {
+  startX = event.touches[0].clientX;
+});
+
+feedbackDiv.addEventListener("touchmove", (event) => {
+  const moveX = event.touches[0].clientX;
+  const diffX = startX - moveX;
+
+  if (Math.abs(diffX) > 50) {
+    if (diffX > 0) {
+      currentIndex = (currentIndex + 1) % certificate.length;
+    } else {
+      currentIndex =
+        (currentIndex - 1 + certificate.length) % certificate.length;
+    }
+    displayFeedback();
+    event.displayFeedback();
+  }
+});
+
 displayFeedback(currentIndex);
