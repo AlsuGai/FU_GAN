@@ -50,6 +50,7 @@ const feedbackArr = [
 ];
 
 let currentIndex = 0;
+let isSwiping = false;
 
 function displayFeedback() {
   const feedback = feedbackArr[currentIndex];
@@ -60,6 +61,7 @@ function displayFeedback() {
     document.getElementById("feedback-text").innerText = feedback.review;
     document.getElementById("feedback-name").innerText = feedback.name;
     feedbackDiv.style.opacity = 1;
+    isSwiping = false;
   }, 300);
 }
 
@@ -84,19 +86,22 @@ feedbackDiv.addEventListener("touchstart", (event) => {
 });
 
 feedbackDiv.addEventListener("touchmove", (event) => {
+  if (isSwiping) return;
+
   const moveX = event.touches[0].clientX;
   const diffX = startX - moveX;
 
   if (Math.abs(diffX) > 50) {
+    isSwiping = true;
     if (diffX > 0) {
-      currentIndex = (currentIndex + 1) % certificate.length;
+      currentIndex = (currentIndex + 1) % feedbackArr.length;
     } else {
       currentIndex =
-        (currentIndex - 1 + certificate.length) % certificate.length;
+        (currentIndex - 1 + feedbackArr.length) % feedbackArr.length;
     }
     displayFeedback();
-    event.displayFeedback();
+    event.preventDefault();
   }
 });
 
-displayFeedback(currentIndex);
+displayFeedback();

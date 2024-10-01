@@ -22,6 +22,7 @@ const certificate = [
   certificate10,
 ];
 let currentIndex = 0;
+let isSwiping = false; // Флаг для отслеживания свайпа
 
 function updateImage() {
   const mainImage = document.getElementById("certificate-image");
@@ -30,6 +31,7 @@ function updateImage() {
     mainImage.src = certificate[currentIndex];
     mainImage.onload = () => {
       mainImage.style.opacity = 1;
+      isSwiping = false;
     };
   }, 300);
 }
@@ -55,10 +57,13 @@ mainImage.addEventListener("touchstart", (event) => {
 });
 
 mainImage.addEventListener("touchmove", (event) => {
+  if (isSwiping) return;
+
   const moveX = event.touches[0].clientX;
   const diffX = startX - moveX;
 
   if (Math.abs(diffX) > 50) {
+    isSwiping = true;
     if (diffX > 0) {
       currentIndex = (currentIndex + 1) % certificate.length;
     } else {
