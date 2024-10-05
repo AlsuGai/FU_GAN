@@ -38,16 +38,26 @@
 
 .feedback-text {
   width: 40vw;
+  font-size: 1.125rem;
+  line-height: 1.55;
 }
 
 .feedback-link {
   display: flex;
   justify-content: space-around;
-  gap: 1.875rem;
+  gap: 6rem;
+  padding-top: 2rem;
+
+  a {
+    color: $color-green;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 
 .feedback-link a:hover {
-  text-decoration: underline;
+  color: $color-black;
 }
 
 @media screen and (max-width: 1300px) {
@@ -63,6 +73,34 @@
   .feedback-wrapper {
     gap: 0.9375rem;
   }
+
+  .feedback-text {
+    width: 60vw;
+    font-size: 1rem;
+  }
+
+  .feedback-link {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 933px) {
+  .feedback-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.9375rem;
+    a {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -71,12 +109,6 @@
   }
   .feedback-wrapper {
     gap: 0.8125rem;
-  }
-  .feedback-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.9375rem;
   }
   .feedback-img {
     width: 7.5rem;
@@ -94,5 +126,9 @@
   .feedback-img {
     width: 6rem;
     height: 6rem;
+  }
+
+  .feedback-text {
+    line-height: 1.2;
   }
 }

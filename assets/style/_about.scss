@@ -10,9 +10,15 @@
 }
 
 .about-info {
-  text-indent: 2.5rem;
+  text-indent: 3rem;
   font-size: 1.25rem;
   padding: 1rem;
+  text-align: justify;
+
+  p:nth-child(2),
+  p:nth-child(3) {
+    padding-top: 1.5rem;
+  }
 }
 
 .about-photo {
@@ -40,7 +46,6 @@
     align-items: center;
   }
   .about-info {
-    text-indent: 0.9375rem;
     font-size: 1.125rem;
   }
 }
