@@ -36,9 +36,8 @@
   .about-wrapper {
     gap: 0.8rem;
   }
-
   .about-info {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     p:nth-child(2),
     p:nth-child(3) {
       padding-top: 1rem;
@@ -53,7 +52,7 @@
     align-items: center;
   }
   .about-info {
-    font-size: 1rem;
+    // font-size: 1rem;
     max-height: max-content;
     p:nth-child(2),
     p:nth-child(3) {
@@ -68,6 +67,7 @@
   }
   .about-photo {
     max-height: 60vh;
+    width: 100%;
     padding: 0rem;
   }
   .about-info {
