@@ -13,7 +13,7 @@ function resizeText() {
     container.scrollHeight > container.clientHeight &&
     fontSize > minFontSize
   ) {
-    fontSize -= 0.1;
+    fontSize -= 0.2;
     container.style.fontSize = `${fontSize}rem`;
   }
 }

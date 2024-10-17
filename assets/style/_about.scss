@@ -7,13 +7,15 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1.875rem;
+  height: 100%;
 }
 
 .about-info {
   text-indent: 3rem;
   // font-size: 2rem;
   text-align: justify;
-  max-height: 80vh;
+  max-height: 85vh;
+
   p:nth-child(2),
   p:nth-child(3) {
     padding-top: 1.5rem;
@@ -25,7 +27,7 @@
   object-position: center;
   max-width: 100%;
   width: auto;
-  max-height: 80vh;
+  max-height: 85vh;
   height: 100%;
 }
 
