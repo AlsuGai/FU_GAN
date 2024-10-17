@@ -4,7 +4,7 @@ function resizeText() {
   const originalFontSize = 1.5;
   let fontSize = originalFontSize;
   container.style.fontSize = `${fontSize}rem`;
-  while (container.scrollHeight > container.clientHeight && fontSize > 0.5) {
+  while (container.scrollHeight > container.clientHeight && fontSize > 0.8) {
     fontSize -= 0.1;
     container.style.fontSize = `${fontSize}rem`;
   }

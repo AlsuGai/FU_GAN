@@ -58,6 +58,7 @@
   }
   .about-info {
     padding: 0.9rem;
+    // max-height: auto;
     p:nth-child(2),
     p:nth-child(3) {
       padding-top: 0.8rem;
@@ -71,11 +72,11 @@
   }
   .about-photo {
     // width: 100%;
-    // max-height: 65vh;
+    max-height: 60vh;
     padding: 0rem;
   }
   .about-info {
-    text-indent: 1.5rem;
+    text-indent: 2rem;
     padding: 0rem;
   }
 }
