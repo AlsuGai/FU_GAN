@@ -85,14 +85,14 @@ header {
   }
 
   .burger__inactive {
-    background: url(../images/burger.png);
+    background: url(../images/icons/burger.png);
     background-size: 2rem 2rem;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .burger__active {
-    background: url(../images/close.png);
+    background: url(../images/icons/close.png);
     background-size: 2rem 2rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,49 +139,49 @@ header {
   }
 }
 
-@media (max-width: 376px)  {
+@media (max-width: 376px) {
   .burger__pop-up {
     top: 12vh;
   }
 }
 
-@media (max-width: 361px)  {
+@media (max-width: 361px) {
   .burger__pop-up {
     top: 10vh;
   }
 }
 
-@media (max-width: 668px) and (orientation:landscape)  {
+@media (max-width: 668px) and (orientation: landscape) {
   .burger__pop-up {
     top: 20vh;
   }
 }
 
-@media (max-width: 897px) and (orientation:landscape)  {
+@media (max-width: 897px) and (orientation: landscape) {
   .burger__pop-up {
     top: 19vh;
   }
 }
 
-@media (max-width: 933px) and (orientation:landscape)  {
+@media (max-width: 933px) and (orientation: landscape) {
   .burger__pop-up {
     top: 18vh;
   }
 }
 
-@media (max-width: 741px) and (orientation:landscape)  {
+@media (max-width: 741px) and (orientation: landscape) {
   .burger__pop-up {
     top: 21 vh;
   }
 }
 
-@media (max-width: 722px) and (orientation:landscape)  {
+@media (max-width: 722px) and (orientation: landscape) {
   .burger__pop-up {
     top: 14vh;
   }
 }
 
-@media (max-width: 883px) and (orientation:landscape)  {
+@media (max-width: 883px) and (orientation: landscape) {
   .burger__pop-up {
     top: 22vh;
   }

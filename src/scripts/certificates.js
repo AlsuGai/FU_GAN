@@ -8,6 +8,8 @@ import certificate7 from "/assets/images/certificate/certificate_7.jpg";
 import certificate8 from "/assets/images/certificate/certificate_8.jpg";
 import certificate9 from "/assets/images/certificate/certificate_9.jpg";
 import certificate10 from "/assets/images/certificate/certificate_10.jpg";
+import certificate11 from "/assets/images/certificate/certificate_11.jpg";
+import certificate12 from "/assets/images/certificate/certificate_12.jpg";
 
 const certificate = [
   certificate1,
@@ -20,6 +22,8 @@ const certificate = [
   certificate8,
   certificate9,
   certificate10,
+  certificate11,
+  certificate12,
 ];
 let currentIndex = 0;
 let isSwiping = false; // Флаг для отслеживания свайпа

@@ -23,13 +23,18 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1280px) {
   .certificate-container {
     padding: 3.125rem 2rem;
   }
+  .certificate-wrapper {
+    margin: 0.9375rem;
+    gap: 0.8rem;
+    height: 60vh;
+  }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .certificate-container {
     padding: 3.125rem 0 2rem;
   }
@@ -37,6 +42,7 @@
   .certificate-wrapper {
     margin: 0.9375rem;
     gap: 0.8rem;
+    height: 50vh;
   }
 }
 
@@ -51,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 568px) {
   .certificate-container {
     padding: 1.875rem 0 2.5rem;
   }

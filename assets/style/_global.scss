@@ -7,20 +7,20 @@
 *,
 *::before,
 *::after {
-  font-family: "Nunito Sans", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-body {
-  font-size: 1vw;
+// body {
+//   font-size: 1vw;
 
-  @media (max-width: 430px) {
-    font-size: 5.4vw;
-  }
+//   @media (max-width: 430px) {
+//     font-size: 5.4vw;
+//   }
 
-  @media (max-width: 1024px) {
-    font-size: 2.1vw;
-  }
-}
+//   @media (max-width: 1024px) {
+//     font-size: 2.1vw;
+//   }
+// }
 
 a {
   text-decoration: none;

@@ -1,8 +1,8 @@
-import review1 from "/assets/images/photo/review_1.jpg";
-import review2 from "/assets/images/photo/review_2.jpg";
-import review3 from "/assets/images/photo/review_3.jpg";
-import review4 from "/assets/images/photo/review_4.jpg";
-import reviewWithoutPhoto from "/assets/images/photo/review_without_photo.png";
+import review1 from "/assets/images/photoFeedback/review_1.jpg";
+import review2 from "/assets/images/photoFeedback/review_2.jpg";
+import review3 from "/assets/images/photoFeedback/review_3.jpg";
+import review4 from "/assets/images/photoFeedback/review_4.jpg";
+import reviewWithoutPhoto from "/assets/images/photoFeedback/review_without_photo.png";
 
 const feedbackArr = [
   {
