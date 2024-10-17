@@ -7,12 +7,11 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1.875rem;
-  // max-height: 80vh;
 }
 
 .about-info {
   text-indent: 3rem;
-  font-size: 2rem;
+  // font-size: 2rem;
   text-align: justify;
   max-height: 80vh;
   p:nth-child(2),
@@ -53,8 +52,8 @@
     align-items: center;
   }
   .about-info {
-    font-size: 1rem;
-    max-height: max-content;
+    // font-size: 1rem;
+    // max-height: max-content;
     p:nth-child(2),
     p:nth-child(3) {
       padding-top: 0.8rem;
@@ -67,12 +66,12 @@
     padding: 1rem;
   }
   .about-photo {
-    max-height: 60vh;
+    // max-height: 60vh;
     width: 100%;
     padding: 0rem;
   }
   .about-info {
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
     text-indent: 2rem;
     padding: 0rem;
   }

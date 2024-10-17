@@ -1,28 +1,25 @@
 const container = document.querySelector(".about-info");
 
 function resizeText() {
-  const originalFontSize = 1.5;
-  let fontSize = originalFontSize;
+  const minFontSize = 1;
+  let fontSize = 1.5;
+  if (window.innerWidth > 1200) {
+    fontSize += ((window.innerWidth - 1200) / 1200) * 0.5;
+  }
+
   container.style.fontSize = `${fontSize}rem`;
-  while (container.scrollHeight > container.clientHeight && fontSize > 0.8) {
+
+  while (
+    container.scrollHeight > container.clientHeight &&
+    fontSize > minFontSize
+  ) {
     fontSize -= 0.1;
     container.style.fontSize = `${fontSize}rem`;
   }
 }
 
-function shouldResizeText() {
-  return window.matchMedia("(min-width: 769px)").matches;
-}
+// Обработчик события изменения размера окна
+window.addEventListener("resize", resizeText);
 
-const resizeObserver = new ResizeObserver(() => {
-  if (shouldResizeText()) {
-    resizeText();
-  }
-});
-resizeObserver.observe(container);
-
-window.addEventListener("load", () => {
-  if (shouldResizeText()) {
-    resizeText();
-  }
-});
+// Обработчик события загрузки страницы
+window.addEventListener("load", resizeText);
