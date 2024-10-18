@@ -11,18 +11,17 @@
   p {
     font-size: 1.125rem;
     font-weight: 300;
-    padding-top: 2.1875rem;
+    padding-top: 1.5rem;
     width: 25rem;
     text-align: justify;
     text-indent: 3rem;
   }
+}
 
-  .services-container {
-    display: grid;
-    justify-content: center;
-    grid-template: 1fr 1fr/25rem 25rem 25rem;
-    gap: 3.75rem;
-  }
+.services__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ilgotherapy {
@@ -34,7 +33,7 @@
     url("../images/services/ilgotherapy.jpg");
 }
 
-.manual-therapy {
+.manualTherapy {
   background: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0.4),
@@ -80,7 +79,7 @@
 }
 
 .ilgotherapy,
-.manual-therapy,
+.manualTherapy,
 .auriculotherapy,
 .acupressure,
 .electropuncture,
@@ -99,7 +98,6 @@
     padding: 3.75rem 2rem;
 
     .services-container {
-      grid-template: 1fr 1fr 1fr/25rem 25rem;
       gap: 1.875rem;
     }
   }
@@ -109,14 +107,6 @@
   .services {
     p {
       font-size: 1rem;
-    }
-
-    .services-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 1.875rem;
     }
   }
 }

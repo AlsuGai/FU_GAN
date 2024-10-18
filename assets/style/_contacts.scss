@@ -10,35 +10,41 @@
   .contacts__phone {
     font-size: 2.625rem;
     font-weight: 600;
-
-    &:hover {
-      color: $color-green;
-    }
   }
 
   .contacts__social {
     a {
-      img {
-        background-color: $color-green;
-      }
-
-      & :hover {
-        background-color: $color-black;
-      }
+      background-color: $color-green;
     }
   }
 
   .contacts__reception {
     height: 3.5rem;
     background-color: $color-green;
-
-    &:hover {
-      background-color: rgb(7, 120, 64, 0.7);
-    }
   }
 
   .contacts__hour {
     font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1030px) {
+  .contacts__social {
+    a:hover {
+      background-color: $color-black;
+    }
+  }
+
+  .contacts__phone {
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  .contacts__reception {
+    &:hover {
+      background-color: rgb(7, 120, 64, 0.7);
+    }
   }
 }
 

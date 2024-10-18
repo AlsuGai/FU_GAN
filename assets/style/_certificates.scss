@@ -10,7 +10,7 @@
   justify-content: space-between;
   gap: 1.25rem;
   height: 70vh;
-  margin: 3rem;
+  margin: 0 3rem;
 }
 
 .certificate-image {
@@ -28,7 +28,7 @@
     padding: 3.125rem 2rem;
   }
   .certificate-wrapper {
-    margin: 0.9375rem;
+    margin: 0 0.9375rem;
     gap: 0.8rem;
     height: 60vh;
   }
@@ -40,7 +40,7 @@
   }
 
   .certificate-wrapper {
-    margin: 0.9375rem;
+    margin: 0 0.9375rem;
     gap: 0.8rem;
     height: 50vh;
   }
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 768px) {
   .certificate-wrapper {
-    margin: 0.625rem;
+    margin: 0 0.625rem;
     gap: 0.6rem;
     height: 40vh;
   }
@@ -62,7 +62,7 @@
     padding: 1.875rem 0 2.5rem;
   }
   .certificate-wrapper {
-    margin: 0.5rem;
+    margin: 0 0.5rem;
     gap: 0.4rem;
     height: 35vh;
   }

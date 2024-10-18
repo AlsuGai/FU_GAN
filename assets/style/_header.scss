@@ -39,19 +39,6 @@ header {
   }
 }
 
-.header__social,
-.burger__social {
-  a {
-    img {
-      background-color: $color-black;
-    }
-
-    & :hover {
-      background-color: $color-white;
-    }
-  }
-}
-
 @media (max-width: 1360px) {
   .header__nav {
     .header__logo {

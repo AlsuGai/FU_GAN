@@ -7,7 +7,6 @@
   text-align: center;
   cursor: pointer;
   border: none;
-  display: flex;
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +19,13 @@
 
 .nextBtn {
   background-image: url("/assets/images/icons/right-arrow.png");
+}
+
+@media (min-width: 1030px) {
+  .prevBtn,
+  .nextBtn:hover {
+    background-color: rgb(7, 120, 64, 0.7);
+  }
 }
 
 @media screen and (max-width: 960px) {
