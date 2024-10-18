@@ -22,8 +22,11 @@
 }
 
 @media (min-width: 1030px) {
-  .prevBtn,
-  .nextBtn:hover {
+  .prevBtn :hover {
+    background-color: rgb(7, 120, 64, 0.7);
+  }
+
+  .nextBtn :hover {
     background-color: rgb(7, 120, 64, 0.7);
   }
 }
