@@ -12,7 +12,7 @@
     font-size: 1.125rem;
     font-weight: 300;
     padding-top: 1.5rem;
-    width: 25rem;
+    width: 30rem;
     text-align: justify;
     text-indent: 3rem;
   }
@@ -85,7 +85,7 @@
 .electropuncture,
 .pir {
   background-position: center;
-  width: 25rem;
+  width: 30rem;
   height: 18.75rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,11 +95,7 @@
 
 @media (max-width: 1500px) {
   .services {
-    padding: 3.75rem 2rem;
-
-    .services-container {
-      gap: 1.875rem;
-    }
+    padding: 3.75rem 3rem;
   }
 }
 
@@ -113,12 +109,24 @@
 
 @media (max-width: 500px) {
   .services {
+    padding: 1.875rem 1rem;
+
     h3 {
       font-size: 1.2rem;
     }
 
     p {
-      width: 90vw;
+      width: 73vw;
     }
+  }
+
+  .ilgotherapy,
+  .manualTherapy,
+  .auriculotherapy,
+  .acupressure,
+  .electropuncture,
+  .pir {
+    width: 73vw;
+    height: 25vh;
   }
 }

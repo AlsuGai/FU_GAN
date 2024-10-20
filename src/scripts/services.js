@@ -6,7 +6,6 @@ import electropuncture from "/assets/images/services/electropuncture.jpg";
 import pir from "/assets/images/services/pir.jpg";
 import dataJSON from "/assets/data/services.json";
 
-
 const btnPrev = document.getElementById("prevBtnServices");
 const btnNext = document.getElementById("nextBtnServices");
 const servicesContainer = document.getElementById("services-container");
@@ -27,16 +26,13 @@ btnNext.addEventListener("click", () => {
 btnPrev.addEventListener("click", () => {
   if (currentIndex <= 0) {
     currentIndex = 5;
-    console.log(currentIndex);
   } else {
     currentIndex--;
-    console.log(currentIndex);
   }
   createService();
 });
 
 document.addEventListener("DOMContentLoaded", (e) => {
-    
     if(servicesData) {
         createService(servicesData);
     } else {
@@ -63,17 +59,20 @@ servicesContainer.addEventListener("touchstart", (event) => {
 
 servicesContainer.addEventListener("touchmove", (event) => {
   if (isSwiping) return;
+
   const moveX = event.touches[0].clientX;
   const diffX = startX - moveX;
+
   if (Math.abs(diffX) > 50) {
     isSwiping = true;
     if (diffX > 0) {
         currentIndex++;
     } else {
-        currentIndex++;
+        currentIndex--;
     }
     createService();
-    event.preventDefault();
+  
   }
 });
 
+createService();

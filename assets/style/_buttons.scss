@@ -21,16 +21,6 @@
   background-image: url("/assets/images/icons/right-arrow.png");
 }
 
-@media (min-width: 1030px) {
-  .prevBtn :hover {
-    background-color: rgb(7, 120, 64, 0.7);
-  }
-
-  .nextBtn :hover {
-    background-color: rgb(7, 120, 64, 0.7);
-  }
-}
-
 @media screen and (max-width: 960px) {
   .prevBtn,
   .nextBtn {
@@ -46,5 +36,15 @@
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: 1030px) {
+  .nextBtn:hover {
+    background-color: rgb(7, 120, 64, 0.7);
+  }
+
+  .prevBtn:hover {
+    background-color: rgb(7, 120, 64, 0.7);
   }
 }
