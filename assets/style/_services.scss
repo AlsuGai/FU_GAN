@@ -9,7 +9,6 @@
   }
 
   p {
-    font-size: 1.125rem;
     font-weight: 300;
     padding-top: 1.5rem;
     width: 30rem;
@@ -96,14 +95,6 @@
 @media (max-width: 1500px) {
   .services {
     padding: 3.75rem 3rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .services {
-    p {
-      font-size: 1rem;
-    }
   }
 }
 

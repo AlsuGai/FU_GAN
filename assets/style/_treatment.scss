@@ -5,17 +5,12 @@
   padding: 3.75rem 10rem 2.5rem;
 
   p {
-    font-size: 1.125rem;
     line-height: 1.55;
   }
 }
 
 @media (max-width: 912px) {
   .treatment {
-    padding: 3.75rem 2rem;
-
-    p {
-      font-size: 1rem;
-    }
+    padding: 3.75rem 3rem;
   }
 }
