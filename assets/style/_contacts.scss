@@ -10,17 +10,20 @@
   .contacts__phone {
     font-size: 2.625rem;
     font-weight: 600;
+    transition: 0.3s ease;
   }
 
   .contacts__social {
     a {
       background-color: $color-green;
+      transition: 0.3s ease;
     }
   }
 
   .contacts__reception {
     height: 3.5rem;
     background-color: $color-green;
+    transition: 0.5s ease;
   }
 }
 
