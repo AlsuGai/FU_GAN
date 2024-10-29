@@ -57,7 +57,7 @@ header {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .header__links > div,
   .header__links,
   .header__social {
@@ -125,7 +125,7 @@ header {
   }
 }
 
-@media (max-width: 1200px) and (max-height: 700px) {
+@media (max-width: 1280px) and (max-height: 700px) {
   .burger__pop-up {
     top: 13vh;
   }
