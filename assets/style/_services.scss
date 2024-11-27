@@ -92,6 +92,11 @@
   vertical-align: bottom;
 }
 
+.services-container {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 @media (max-width: 1500px) {
   .services {
     padding: 3.75rem 3rem;
@@ -119,5 +124,7 @@
   .pir {
     width: 73vw;
     height: 25vh;
+    opacity: 1;
+    transition: opacity 0.3s ease;
   }
 }

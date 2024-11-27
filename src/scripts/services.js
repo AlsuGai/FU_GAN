@@ -15,38 +15,46 @@ let id = 0;
 let currentIndex = id;
 let isSwiping = false;
 btnNext.addEventListener("click", () => {
-  if (currentIndex >= 5) {
-    currentIndex = 0;
-  } else {
-    currentIndex++;
-  }
-  createService();
+  servicesContainer.style.opacity = 0;
+  setTimeout(() => {
+    if (currentIndex >= 5) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    createService();
+    servicesContainer.style.opacity = 1;
+  }, 300);
 });
 
 btnPrev.addEventListener("click", () => {
-  if (currentIndex <= 0) {
-    currentIndex = 5;
-  } else {
-    currentIndex--;
-  }
-  createService();
+  servicesContainer.style.opacity = 0;
+  setTimeout(() => {
+    if (currentIndex <= 0) {
+      currentIndex = 5;
+    } else {
+      currentIndex--;
+    }
+    createService();
+    servicesContainer.style.opacity = 1;
+  }, 300);
 });
 
 document.addEventListener("DOMContentLoaded", (e) => {
-    if(servicesData) {
-        createService(servicesData);
-    } else {
-        console.log(error.message);
-    }
+  if (servicesData) {
+    createService(servicesData);
+  } else {
+    console.log(error.message);
+  }
 });
 
 function createService() {
-  servicesContainer.innerHTML = `<div>
+  servicesContainer.innerHTML = `
             <div class=${servicesData[currentIndex].image}>
               <h3>${servicesData[currentIndex].title}</h3>
             </div>
             <p>${servicesData[currentIndex].text}</p>
-          </div>`;
+          `;
 }
 
 // прокрутка пальцами
@@ -66,12 +74,11 @@ servicesContainer.addEventListener("touchmove", (event) => {
   if (Math.abs(diffX) > 50) {
     isSwiping = true;
     if (diffX > 0) {
-        currentIndex++;
+      currentIndex++;
     } else {
-        currentIndex--;
+      currentIndex--;
     }
     createService();
-  
   }
 });
 
