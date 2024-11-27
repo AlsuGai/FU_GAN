@@ -10,13 +10,13 @@
   .contacts__phone {
     font-size: 2.625rem;
     font-weight: 600;
-    transition: 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   .contacts__social {
     a {
       background-color: $color-green;
-      transition: 0.3s ease;
+      transition: all 0.5s ease;
     }
   }
 
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1030px) {
+@media (hover: hover) {
   .contacts__social {
     a:hover {
       background-color: $color-black;

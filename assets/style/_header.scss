@@ -15,7 +15,7 @@ header {
   padding: 2.5rem 2.5rem;
   width: 100vw;
   height: 10vh;
-  transition: 0.3s ease;
+  transition: all 0.5s ease;
 
   .header__logo {
     font-size: 1.875rem;
@@ -33,9 +33,10 @@ header {
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all 0.5s ease;
 
     & div {
-      transition: 0.3s ease;
+      transition: all 0.5s ease;
     }
   }
 
