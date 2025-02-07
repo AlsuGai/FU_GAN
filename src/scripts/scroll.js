@@ -13,58 +13,58 @@ export const contacts = document.getElementById("contacts");
 const arrow = document.getElementById("arrow-top");
 const logo = document.getElementById("logo");
 
-navDoctor.addEventListener("click", e => {
-    doctor.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    });
+navDoctor.addEventListener("click", (e) => {
+  doctor.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 });
 
-navServices.addEventListener("click", e => {
-    services.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    });
+navServices.addEventListener("click", (e) => {
+  services.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 });
 
-navTreatment.addEventListener("click", e => {
-    treatment.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    });
+navTreatment.addEventListener("click", (e) => {
+  treatment.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 });
 
-navSertificate.addEventListener("click", e => {
-    certificates.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    });
+navSertificate.addEventListener("click", (e) => {
+  certificates.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 });
 
-navFeedback.addEventListener("click", e => {
-    feedback.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    });
+navFeedback.addEventListener("click", (e) => {
+  feedback.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 });
 
-navContact.addEventListener("click", e => {
-    contacts.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    });
+navContact.addEventListener("click", (e) => {
+  contacts.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 });
 
-arrow.addEventListener("click", e => {
-    doctor.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    })
-})
+arrow.addEventListener("click", (e) => {
+  doctor.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
+});
 
-logo.addEventListener("click", e => {
-    doctor.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-    })
-})
+logo.addEventListener("click", (e) => {
+  doctor.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
+});

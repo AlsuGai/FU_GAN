@@ -15,18 +15,19 @@ const burgerTreatment = document.getElementById("burger__treatment");
 const burgerSertificate = document.getElementById("burger__sertificate");
 const burgerFeedback = document.getElementById("burger__feedback");
 const burgerContact = document.getElementById("burger-contact");
-
-menu.addEventListener("click", () => {
-  menu.classList.toggle("burger__inactive");
-  menu.classList.toggle("burger__active");
-  popUp.classList.toggle("pop-up-inactive");
-});
+const body = document.getElementById("body");
 
 function closeMenu() {
-  menu.classList.toggle("burger__inactive");
-  menu.classList.toggle("burger__active");
-  popUp.classList.toggle("pop-up-inactive");
-};
+  menu.classList.toggle("open");
+  popUp.classList.toggle("pop_up-inactive");
+  body.classList.toggle("overlay");
+}
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("open");
+  popUp.classList.toggle("pop_up-inactive");
+  body.classList.toggle("overlay");
+});
 
 burgerDoctor.addEventListener("click", () => {
   closeMenu();
@@ -37,41 +38,41 @@ burgerDoctor.addEventListener("click", () => {
 });
 
 burgerServices.addEventListener("click", () => {
-    closeMenu();
-    services.scrollIntoView({
-        block: "start",
-        behavior: "auto",
-    });
+  closeMenu();
+  services.scrollIntoView({
+    block: "start",
+    behavior: "auto",
+  });
 });
 
 burgerTreatment.addEventListener("click", () => {
-    closeMenu();
-    treatment.scrollIntoView({
-        block: "start",
-        behavior: "auto",
-    });
+  closeMenu();
+  treatment.scrollIntoView({
+    block: "start",
+    behavior: "auto",
+  });
 });
 
 burgerSertificate.addEventListener("click", () => {
-    closeMenu();
-    certificates.scrollIntoView({
-        block: "start",
-        behavior: "auto",
-    });
+  closeMenu();
+  certificates.scrollIntoView({
+    block: "start",
+    behavior: "auto",
+  });
 });
 
 burgerFeedback.addEventListener("click", () => {
-    closeMenu();
-    feedback.scrollIntoView({
-        block: "start",
-        behavior: "auto",
-    });
+  closeMenu();
+  feedback.scrollIntoView({
+    block: "start",
+    behavior: "auto",
+  });
 });
 
 burgerContact.addEventListener("click", () => {
-    closeMenu();
-    contacts.scrollIntoView({
-        block: "start",
-        behavior: "auto",
-    });
-})
+  closeMenu();
+  contacts.scrollIntoView({
+    block: "start",
+    behavior: "auto",
+  });
+});

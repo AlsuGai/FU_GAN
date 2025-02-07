@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="descriprion"
+      content="рефлексотерапия, акупунктура, мануальная терапия, иглоукалывание, Фу Ган Львович, лечение позвоночника, реабилитация, боль в пояснице, боль в шее,  боль в спине,  головная боль,  головокружение, шум в ушах, невралгии, восстановление после КОВИД, боль в колене, коленном суставе, боль в пятке, боль в плече, плечевом суставе, бессонница, панические атаки, паралич Белла, упадок сил, нарушение менструального цикла, снижение либидо, импотенция, лечение, иглорефлексотерапия"
+    />
     <link
       rel="shortcut icon"
       href="assets/images/icons/logo_icon.svg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/style/style.scss" />
-    <title>ФУ ГАН</title>
+    <title>
+      ФУ ГАН - ВРАЧ-ИГЛОРЕФЛЕКСОТЕРАПЕВТ, ВРАЧ-НЕВРОЛОГ, ВРАЧ ЛЕЧЕБНОЙ
+      ФИЗКУЛЬТУРЫ, РЕАБИЛИТОЛОГ И МАНУАЛЬНЫЙ ТЕРАПЕВТ
+    </title>
   </head>
-  <body>
+  <body class="" id="body">
     <header>
       <nav class="header__nav">
         <div class="header__logo" id="logo">ФУ ГАН</div>
         <div class="header__links">
-          <div id="nav-doctor">ОБО МНЕ</div>
-          <div id="nav-services">УСЛУГИ</div>
-          <div id="nav-treatment">Я ЛЕЧУ</div>
-          <div id="nav-sertificate">СЕРТИФИКАТЫ</div>
-          <div id="nav-feedback">ОТЗЫВЫ</div>
+          <a id="nav-doctor" href="#about-container">ОБО МНЕ</a>
+          <a id="nav-services" href="#services">УСЛУГИ</a>
+          <a id="nav-treatment" href="#treatment">Я ЛЕЧУ</a>
+          <a id="nav-sertificate" href="#certificates">СЕРТИФИКАТЫ</a>
+          <a id="nav-feedback" href="#feedback-container">ОТЗЫВЫ</a>
         </div>
         <div class="social-networks header__social">
           <a
@@ -38,15 +45,17 @@
           <div id="contact" class="button-contacts">Контакты</div>
         </div>
       </nav>
-      <div class="header__burger burger__inactive" id="header__burger"></div>
-
-      <div class="burger__pop-up pop-up-inactive" id="pop-up">
-        <div id="burger__doctor">ОБО МНЕ</div>
-        <div id="burger__services">УСЛУГИ</div>
-        <div id="burger__treatment">Я ЛЕЧУ</div>
-        <div id="burger__sertificate">СЕРТИФИКАТЫ</div>
-        <div id="burger__feedback">ОТЗЫВЫ</div>
-        <div class="burger__social">
+      <button class="header__burger" id="header__burger">
+        <span class="burger-item"></span>
+        <span class="burger-item"></span>
+      </button>
+      <ul class="burger__pop-up" id="pop-up">
+        <li id="burger__doctor">ОБО МНЕ</li>
+        <li id="burger__services">УСЛУГИ</li>
+        <li id="burger__treatment">Я ЛЕЧУ</li>
+        <li id="burger__sertificate">СЕРТИФИКАТЫ</li>
+        <li id="burger__feedback">ОТЗЫВЫ</li>
+        <li class="burger__social">
           <a
             href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
             ><img
@@ -58,9 +67,9 @@
               src="assets/images/icons/telegram.svg"
               alt="Написать в телеграм"
           /></a>
-        </div>
+        </li>
         <div id="burger-contact" class="button-contacts">Контакты</div>
-      </div>
+      </ul>
     </header>
     <main>
       <section class="about-container" id="about-container">
@@ -71,7 +80,7 @@
             alt="FU GAN"
             class="about-photo"
           />
-          <div class="about-info">
+          <h1 class="about-info">
             <p>
               Здравствуйте! Меня зовут Фу Ган Львович. Я потомственный
               врач-иглорефлексотерапевт, врач-невролог, врач лечебной
@@ -96,7 +105,7 @@
               работа отдельных органов и систем, что значительно улучшает и
               повышает их качество жизни.
             </p>
-          </div>
+          </h1>
         </div>
       </section>
       <section class="services" id="services">
@@ -172,6 +181,7 @@
               class="feedback-img"
               id="feedback-img"
               src="/assets/images/photo/review_1.jpg"
+              alt="Отзывы"
             />
             <p class="feedback-text" id="feedback-text"></p>
             <h4 class="feedback-name" id="feedback-name"></h4>

@@ -2,7 +2,7 @@ header {
   background-color: $color-header;
   display: flex;
   align-items: center;
-  z-index: 10;
+  z-index: 15;
   top: 0;
   right: 0;
   position: sticky;
@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   padding: 2.5rem 2.5rem;
   width: 100vw;
-  height: 10vh;
+  height: 64px;
   transition: all 0.5s ease;
 
   .header__logo {
@@ -59,7 +59,7 @@ header {
 }
 
 @media (max-width: 1280px) {
-  .header__links > div,
+  .header__links > a,
   .header__links,
   .header__social {
     display: none;
@@ -67,52 +67,70 @@ header {
 
   .header__burger {
     display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
     border: 1px solid $color-black;
     border-radius: 50%;
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 40px;
+    height: 40px;
     justify-items: end;
     padding: 0.625rem;
     position: absolute;
     right: 2.5rem;
+    background: transparent;
+    transition: transform 0.7s;
+    z-index: 11;
   }
 
-  .burger__inactive {
-    background: url(../images/icons/burger.png);
-    background-size: 2rem 2rem;
-    background-position: center;
-    background-repeat: no-repeat;
+  .open {
+    gap: 0;
+
+    .burger-item:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .burger-item:nth-child(2) {
+      transform: rotate(-45deg);
+    }
   }
 
-  .burger__active {
-    background: url(../images/icons/close.png);
-    background-size: 2rem 2rem;
-    background-position: center;
-    background-repeat: no-repeat;
+  .burger-item {
+    width: 1.25rem;
+    height: 1px;
+    background-color: #181c29;
+    font-size: 0;
+    color: transparent;
+    transition: transform 0.5s;
+  }
+
+  .pop_up-inactive {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
   }
 
   .burger__pop-up {
-    position: absolute;
+    position: fixed;
     z-index: 5;
-    top: 10vh;
-    right: 0;
+    top: 64px;
     width: 100vw;
     height: 100vh;
     background-color: $color-green;
-    border-top: 0.3px solid $color-black;
     display: flex;
     flex-direction: column;
     justify-content: left;
+    -webkit-justify-content: left;
     align-items: end;
     padding: 2.5rem;
     gap: 1.875rem;
-  }
-
-  .pop-up-inactive {
+    transition: all 0.5s linear;
     opacity: 0;
-    transform: translateY(-10px);
-    visibility: hidden;
-    transition: 0.01s;
+    transform: translateX(100%);
+
+    li {
+      list-style-type: none;
+    }
   }
 
   #burger__doctor,

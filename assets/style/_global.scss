@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 64px;
 }
 
 *,
@@ -103,4 +103,8 @@ ul {
     font-size: 1rem;
     line-height: 1.1rem;
   }
+}
+
+.overlay {
+  overflow: hidden;
 }
