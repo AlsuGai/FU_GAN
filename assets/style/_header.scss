@@ -120,8 +120,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    -webkit-justify-content: left;
     align-items: end;
+    align-items: flex-end;
+    -webkit-align-items: end;
+
     padding: 2.5rem;
     gap: 1.875rem;
     transition: all 0.5s linear;
@@ -141,6 +143,7 @@ header {
     font-size: 1.5rem;
     font-weight: 500;
     border-bottom: 1px solid $color-black;
+    line-height: 100%;
   }
 }
 
