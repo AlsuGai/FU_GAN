@@ -24,9 +24,7 @@ function closeMenu() {
 }
 
 menu.addEventListener("click", () => {
-  menu.classList.toggle("open");
-  popUp.classList.toggle("pop_up-inactive");
-  body.classList.toggle("overlay");
+  closeMenu();
 });
 
 burgerDoctor.addEventListener("click", () => {

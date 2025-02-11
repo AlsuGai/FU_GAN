@@ -123,6 +123,7 @@ header {
     justify-content: left;
     align-items: end;
     align-items: flex-end;
+    display: -webkit-flex;
     -webkit-align-items: end;
 
     padding: 2.5rem;
