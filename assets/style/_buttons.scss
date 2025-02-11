@@ -21,12 +21,39 @@
   background-image: url("/assets/images/icons/right-arrow.png");
 }
 
+.button-green {
+  height: 3rem;
+  background-color: $color-green;
+  transition: 0.5s ease;
+  border-radius: 1.875rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0 1.875rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 0.9375rem;
+  transition: all 0.5s ease;
+  border: 1px solid $color-green;
+}
+
 @media screen and (max-width: 960px) {
   .prevBtn,
   .nextBtn {
     width: 1.5625rem;
     height: 1.5625rem;
     border-radius: 50%;
+  }
+
+  .button-green {
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .button-green {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -45,6 +72,10 @@
   }
 
   .prevBtn:hover {
+    background-color: rgb(7, 120, 64, 0.7);
+  }
+
+  .button-green:hover {
     background-color: rgb(7, 120, 64, 0.7);
   }
 }

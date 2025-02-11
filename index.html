@@ -175,7 +175,7 @@
       <section class="feedback-container" id="feedback">
         <h2>Отзывы моих клиентов</h2>
         <div class="feedback-wrapper">
-          <button id="prevBtnFeedback" class="prevBtn"></button>
+          <button id="prevBtnFeedback" class="prevBtn prev-feedback"></button>
           <div class="feedback" id="feedback-wrapper">
             <img
               class="feedback-img"
@@ -183,10 +183,18 @@
               src="/assets/images/photo/review_1.jpg"
               alt="Отзывы"
             />
-            <p class="feedback-text" id="feedback-text"></p>
+            <div
+              class="feedback-text-cont feedback-close"
+              id="feedback-text-cont"
+            >
+              <div id="feedback-text" class="feedback-text"></div>
+              <div class="feedback-tans" id="feedback-tans"></div>
+            </div>
+            <button class="button-green" id="button-read">Читать</button>
+            <button class="button-green" id="button-hide">Скрыть</button>
             <h4 class="feedback-name" id="feedback-name"></h4>
           </div>
-          <button id="nextBtnFeedback" class="nextBtn"></button>
+          <button id="nextBtnFeedback" class="nextBtn next-feedback"></button>
         </div>
         <div class="feedback-link">
           <a
@@ -212,11 +220,13 @@
             ><img src="assets/images/icons/telegram-white.svg" alt=""
           /></a>
         </div>
-        <a
-          class="button-contacts contacts__reception"
-          href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
-          ><div>Записаться на консультацию</div></a
-        >
+        <button class="button-green">
+          <a
+            href="https://api.whatsapp.com/send/?phone=79160775080&text&type=phone_number&app_absent=0"
+            ><div>Записаться на консультацию</div></a
+          >
+        </button>
+
         <p class="contacts__hour">Часы работы: Пн-Пт с 9:00 до 19:00</p>
       </section>
     </main>

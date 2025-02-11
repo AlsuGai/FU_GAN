@@ -19,12 +19,6 @@
       transition: all 0.5s ease;
     }
   }
-
-  .contacts__reception {
-    height: 3.5rem;
-    background-color: $color-green;
-    transition: 0.5s ease;
-  }
 }
 
 @media (hover: hover) {
@@ -39,22 +33,12 @@
       color: $color-green;
     }
   }
-
-  .contacts__reception {
-    &:hover {
-      background-color: rgb(7, 120, 64, 0.7);
-    }
-  }
 }
 
 @media screen and (max-width: 960px) {
   .contacts {
     .contacts__phone {
       font-size: 2rem;
-    }
-
-    .contacts__reception {
-      height: 3rem;
     }
   }
 }

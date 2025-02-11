@@ -120,6 +120,11 @@ const feedbackArr = [
 
 let currentIndex = 0;
 let isSwiping = false;
+const textContainer = document.getElementById("feedback-text");
+const textTrans = document.getElementById("feedback-tans");
+const buttonRead = document.getElementById("button-read");
+const buttonHide = document.getElementById("button-hide");
+const feedbackTextConrainer = document.getElementById("feedback-text-cont");
 
 function displayFeedback() {
   const feedback = feedbackArr[currentIndex];
@@ -132,11 +137,41 @@ function displayFeedback() {
     } else {
       document.getElementById("feedback-img").style.display = "none";
     }
-    document.getElementById("feedback-text").innerHTML = feedback.review;
+    textContainer.innerHTML = feedback.review;
+    console.log(textContainer.offsetHeight);
+
+    buttonRead.addEventListener("click", readFeedback);
+    buttonHide.addEventListener("click", hideFeedback);
+    if (textContainer.offsetHeight < 169) {
+      textTrans.style.display = "none";
+      buttonRead.style.display = "none";
+      buttonHide.style.display = "none";
+      feedbackTextConrainer.classList.remove("feedback-open");
+      feedbackTextConrainer.classList.add("feedback-close");
+    } else {
+      textTrans.style.display = "flex";
+      buttonHide.style.display = "none";
+    }
     document.getElementById("feedback-name").innerText = feedback.name;
     feedbackDiv.style.opacity = 1;
     isSwiping = false;
   }, 300);
+}
+
+function readFeedback() {
+  feedbackTextConrainer.classList.toggle("feedback-close");
+  feedbackTextConrainer.classList.toggle("feedback-open");
+  textTrans.style.display = "none";
+  buttonHide.style.display = "flex";
+  buttonRead.style.display = "none";
+}
+
+function hideFeedback() {
+  feedbackTextConrainer.classList.toggle("feedback-close");
+  feedbackTextConrainer.classList.toggle("feedback-open");
+  textTrans.style.display = "flex";
+  buttonHide.style.display = "none";
+  buttonRead.style.display = "flex";
 }
 
 document.getElementById("prevBtnFeedback").addEventListener("click", () => {
