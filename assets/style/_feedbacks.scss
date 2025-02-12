@@ -5,14 +5,15 @@
   justify-content: space-evenly;
   gap: 0.9375rem;
   background-color: $color-white;
-  padding: 3.125rem 10rem;
-  width: 100%;
+  padding: 3.125rem 0;
 }
 
 .feedback-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 0 3rem;
   gap: 1.25rem;
 }
 
@@ -21,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.9375rem;
-  width: 80vw;
+  width: 70vw;
   text-align: center;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -29,7 +30,7 @@
 
 .prev-feedback,
 .next-feedback {
-  margin-top: 60px;
+  margin-top: 70px;
   align-self: baseline;
 }
 
@@ -57,7 +58,6 @@
   hyphens: auto;
   position: relative;
   width: inherit;
-  white-space: pre-wrap;
 }
 
 .feedback-open {
@@ -121,14 +121,19 @@
   .feedback-link {
     gap: 3rem;
   }
+
+  .feedback-wrapper {
+    padding: 0 0.9375rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .feedback-container {
-    padding: 3.125rem 2rem 3.75rem;
+    padding: 3.125rem 0;
   }
   .feedback-wrapper {
     gap: 0.9375rem;
+    padding: 0 0.9375rem;
   }
   .feedback-text {
     width: 60vw;
@@ -150,9 +155,10 @@
 
 @media screen and (max-width: 768px) {
   .feedback-container {
-    padding: 2.5rem 2rem 3.125rem;
+    padding: 2.5rem 0;
   }
   .feedback-wrapper {
+    padding: 0 0.625rem;
     gap: 0.8125rem;
   }
   .feedback-img {
@@ -163,10 +169,11 @@
 
 @media screen and (max-width: 568px) {
   .feedbacke-container {
-    padding: 1.875rem 1rem 2.5rem;
+    padding: 1.875rem 0;
   }
   .feedback-wrapper {
     gap: 0.625rem;
+    padding: 0 0.5rem;
   }
   .feedback-img {
     width: 6rem;
